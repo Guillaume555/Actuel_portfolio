@@ -1,0 +1,62 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box skills">
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>web déveloper</h2>
+		<p>Je suis un jeune déveloper web en quête d'apprentissage, cherchant à développer mes compétences dans le domaine.Avec une bonne logique et une bonne adaptation aux différentes situations.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Team Player</h2>
+		<p>J’apprécie de travailler en équipe. J’ai un bon esprit d’équipe, et je suis collaboratif, car je pense que l’on avance mieux en écoutant et analysant les différents points de vue. Je suis doué dans le management et assez intuitif, avec un bon ressenti. </p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2> personal dévelopements</h2>
+		<p>J’ai une forte volonté de mieux faire et de m’améliorer pour être une meilleure version de moi-même. Aussi, je suis attentif aux critiques constructives. Et je sais faire la différence entre les conseils qui vont me permettre d’avancer et les critiques sans but précis.</p>
+	</div>
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>
